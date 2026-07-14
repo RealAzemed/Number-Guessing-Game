@@ -61,5 +61,9 @@ func game(comp int, chances int) {
 			fmt.Printf("Congratulations! You guessed the correct number in %v attempts.\n", attempts)
 			break
 		}
+		if attempts >= chances {
+			fmt.Print("You ran out of chances :(")
+			break
+		}
 	}
 }
